@@ -1,0 +1,25 @@
+---
+import Articulo from "./Articulo.astro";
+
+---
+<section class="w-[90%]  m-auto overflow-hidden max-w-screen-xl grid gap-12 text-center py-24 md:grid-cols-2 md:text-left">
+    <article>
+        <h2 class="text-3xl text-very-dark-blue font-bold mb-6 md:text-4xl">Lorem ipsum dolor?</h2>
+        <p class="text-dark-grayish-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam minima optio commodi? Corporis numquam, voluptatibus aliquid maxime in nostrum cupiditate eveniet dolor dolore veniam excepturi unde provident quia rem minus?</p>
+    </article>
+    <div class="grid gap-12">
+        <Articulo 
+            numero="01" 
+            titulo="Lorem ipsum dolor."
+            contenido="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod delectus ad aspernatur autem veritatis ipsum. Cum, ea tempore in sapiente, fugit hic suscipit odit deleniti placeat odio est recusandae." />
+        <Articulo 
+            numero="02" 
+            titulo="Lorem ipsum dolor."
+            contenido="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod delectus ad aspernatur autem veritatis ipsum. Cum, ea tempore in sapiente, fugit hic suscipit odit deleniti placeat odio est recusandae." />
+        <Articulo 
+            numero="03" 
+            titulo="Lorem ipsum dolor."
+            contenido="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod delectus ad aspernatur autem veritatis ipsum. Cum, ea tempore in sapiente, fugit hic suscipit odit deleniti placeat odio est recusandae." />
+    </div>
+    
+</section>

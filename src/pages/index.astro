@@ -1,5 +1,7 @@
 ---
 import Nav from '../components/Nav.astro' 
+import SeccionPrincipal from '../components/SeccionPrincipal.astro';
+import SeccionArticulos from '../components/SeccionArticulos.astro';
 ---
 <html lang="en">
 	<head>
@@ -8,10 +10,15 @@ import Nav from '../components/Nav.astro'
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 	</head>
-	<body>
-		
-		<Nav></Nav>
-		<h1>Astro</h1>
+	<body class="font-vietnam">
+		<header>
+			<Nav/>
+			<SeccionPrincipal/>
+			<SeccionArticulos/>
+		</header>
 	</body>
 </html>

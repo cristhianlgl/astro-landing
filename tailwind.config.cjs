@@ -10,6 +10,13 @@ module.exports = {
 				'very-dark-blue': 'hsl(233, 12%, 13%)',
 				'very-pale-red': 'hsl(13, 100%, 96%)',
 				'very-light-gray': 'hsl(0, 0%, 98%)'
+			},
+			fontFamily: {
+				'vietnam': ['Be Vietnam Pro','sans-serif'],
+			},
+			backgroundImage: {
+				'hamburger-icon': "url('/images/icon-hamburger.svg')",
+				'close-icon': "url('/images/icon-close.svg')",
 			}
 		},
 	},
