@@ -3,6 +3,8 @@ import Nav from '../components/Nav.astro'
 import SeccionPrincipal from '../components/SeccionPrincipal.astro';
 import SeccionArticulos from '../components/SeccionArticulos.astro';
 import SeccionOpiniones from '../components/SeccionOpiniones.astro';
+import SeccionFinal from '../components/SeccionFinal.astro';
+import Footer from '../components/Footer.astro';
 ---
 <html lang="en">
 	<head>
@@ -18,9 +20,11 @@ import SeccionOpiniones from '../components/SeccionOpiniones.astro';
 	<body class="font-vietnam">
 		<header>
 			<Nav/>
-			<SeccionPrincipal/>
-			<SeccionArticulos/>
-			<SeccionOpiniones/>	
 		</header>
+		<SeccionPrincipal/>
+		<SeccionArticulos/>
+		<SeccionOpiniones/>	
+		<SeccionFinal/>
+		<Footer/>
 	</body>
 </html>
