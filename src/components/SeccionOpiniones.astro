@@ -2,8 +2,8 @@
 import ButtonLink from "./ButtonLink.astro";
 
 ---
-<section class="w-[90%]  m-auto overflow-hidden text-center py-24 grid gap-12 max-w-lg mx-auto">
-    <h2 class="text-dark-blue font-bold text-4xl">
+<section class="w-[90%]  m-auto overflow-hidden text-center py-24 grid gap-12 max-w-lg mx-auto md:max-w-xl">
+    <h2 class="text-dark-blue font-bold text-3xl md:text-4xl">
         Lorem ipsum dolor.
     </h2>
     <article class="mt-24 mb-12 py-12 px-6 bg-very-light-gray relative">
@@ -15,5 +15,5 @@ import ButtonLink from "./ButtonLink.astro";
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima exercitationem esse aperiam, praesentium quibusdam tempore quod quisquam ullam vero explicabo enim a fugit molestiae voluptate obcaecati, blanditiis labore repudiandae rem."
         </p>
     </article>
-    <ButtonLink isInlineBlock={true} href="#" >Get Started</ButtonLink>
+    <ButtonLink cssCustom="mx-auto shadow-xl" href="#" >Get Started</ButtonLink>
 </section>

@@ -3,18 +3,20 @@ interface Props {
   href: string;
   isHidden?: boolean;
   isInlineBlock? : boolean;
+  cssCustom? : string;
 }
 
-const { href, isHidden = false, isInlineBlock = false } = Astro.props;
+const { href, isHidden = false, isInlineBlock = false, cssCustom = ""} = Astro.props;
 ---
 
 <a class:list={[
     "bg-bright-red text-very-light-gray block w-max px-12 py-3 rounded-full shadow-bright-red/30",
+    cssCustom,
     {
         "hidden shadow-md lg:block" : isHidden
     },
     {
-        "mx-auto shadow-xl md:mx-0 " : isInlineBlock
+        "mx-auto shadow-xl md:mx-0" : isInlineBlock,
     }
     ]} href={href}>
     <slot/>
