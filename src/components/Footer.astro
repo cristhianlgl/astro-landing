@@ -2,13 +2,13 @@
 import LinkSocialMedia from "./LinkSocialMedia.astro";
 
 ---
-<footer class="bg-very-dark-blue">
-    <section>
-        <form action="">
-            <input type="email" placeholder="Updates  in your inbox...">
-            <input type="submit" value="GO">
+<footer class="bg-very-dark-blue py-24">
+    <section class="w-[90%]  m-auto overflow-hidden  max-w-screen-xl grid gap-12 justify-items-center  grid-areas-mobile md:grid-areas-md">
+        <form class="flex gap-4 w-full min-w-[100px] grid-in-form">
+            <input class="min-w-[50px] flex-1 rounded-full px-4" type="email" placeholder="Updates  in your inbox...">
+            <input class="py-3 px-8 bg-bright-red rounded-full text-very-pale-red" type="submit" value="GO">
         </form>
-        <nav>
+        <nav class="grid grid-cols-[max-content_max-content] text-white w-4/5 gap-y-4 justify-between grid-in-navigation">
             <a href="#">Home</a>
             <a href="#">Pricing</a>
             <a href="#">Products</a>
@@ -17,15 +17,16 @@ import LinkSocialMedia from "./LinkSocialMedia.astro";
             <a href="#">Community</a>
             <a href="#">Privacy Policy</a> 
         </nav>
-        <div>
+        <div class="flex flex-wrap gap-4 w-full justify-between grid-in-social-media">
             <LinkSocialMedia href="#" src="./images/icon-facebook.svg" />
             <LinkSocialMedia href="#" src="./images/icon-youtube.svg" />
             <LinkSocialMedia href="#" src="./images/icon-twitter.svg" />
             <LinkSocialMedia href="#" src="./images/icon-pinterest.svg" />
             <LinkSocialMedia href="#" src="./images/icon-instagram.svg" />
         </div>
-        <a href="#">
-            <img src="./images/logo.svg" alt="">
+        <a href="#" class="grid-in-logo">
+            <img src="./images/logo-white.svg" alt="">
         </a>
+        <p class="text-dark-grayish-blue grid-in-copy">copyright Lorem ipsum dolor sit.</p>
     </section>
 </footer>

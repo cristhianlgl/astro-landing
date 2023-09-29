@@ -17,8 +17,26 @@ module.exports = {
 			backgroundImage: {
 				'hamburger-icon': "url('/images/icon-hamburger.svg')",
 				'close-icon': "url('/images/icon-close.svg')",
-			}
+			},
+			gridTemplateAreas: {
+				'mobile': [
+					'form',
+					'navigation',
+					'social-media',
+					'logo',
+					'copy',
+				],
+				'md': [
+					'logo         navigation form',
+        			'social-media navigation copy',
+				  ]
+			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@savvywombat/tailwindcss-grid-areas')
+	  ],
+	variants: {
+		gridTemplateAreas: ['responsive']
+	}
 }
